@@ -47,6 +47,10 @@ public class PageResponseDto<E> {
 
         this.nextPage = next ? end + 1 : 0;
 
+        this.currentPage = pageRequestDto.getPage();
+
+        this.totalPage = 10;
+
     }
 
 }
